@@ -1,0 +1,20 @@
+import math
+
+def calculate_circle(radius):
+    # Calculate area
+    area = math.pi * radius ** 2
+
+    # Calculate circumference
+    circumference = 2 * math.pi * radius
+
+    return area, circumference
+
+# Input radius
+radius = float(input("Enter the radius of the circle: "))
+
+# Calculate area and circumference
+circle_area, circle_circumference = calculate_circle(radius)
+
+# Print the results
+print("Area of the circle:", circle_area)
+print("Circumference of the circle:", circle_circumference)
